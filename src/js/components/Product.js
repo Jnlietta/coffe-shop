@@ -1,4 +1,5 @@
 import { select, templates } from '../settings.js';
+import { utils } from '../utils.js';
 
 class Product {
   constructor(id, data){
@@ -15,16 +16,15 @@ class Product {
 
     /* generate HTML based on template with data*/
     const generatedHTML = templates.storeProduct(thisProduct.data);
-    console.log(generatedHTML);
-
+    
     /* create element using utils.createElementFromHTML */
-    //thisProduct.elementDOM = utils.createDOMFromHTML(generatedHTML); //czym jest product.element, tworzymy ze string !prawdziwy element html!
+    thisProduct.element = utils.createDOMFromHTML(generatedHTML); //czym jest product.element, tworzymy ze string !prawdziwy element html!
 
     /* find store container */
     thisProduct.storeContainer = document.querySelector(select.containerOf.store);
 
     /* add element to page */
-    thisProduct.storeContainer.appendChild(thisProduct.elementDOM); //dodaj dziecko do elementu nowy html
+    thisProduct.storeContainer.appendChild(thisProduct.element); //dodaj dziecko do elementu nowy html
   }
 }
 
