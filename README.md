@@ -1,1 +1,1 @@
-# coffe-shop
+# coffee-shop
