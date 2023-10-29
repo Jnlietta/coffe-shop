@@ -1,6 +1,9 @@
 export const select = {
   templateOf: {
     storeProduct: '#template-store-product',
+  },
+  containerOf: {
+    store: '#product-list',
   }
 };
 
