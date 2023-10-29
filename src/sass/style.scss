@@ -1,4 +1,5 @@
-
+// normalize default styles
+@import "normalize";
 
 // Bootstrap
 
@@ -8,3 +9,10 @@
 @import "bootstrap/utilities";
 @import "bootstrap/grid";
 
+// variables
+@import "variables";
+
+// common styles
+@import "layout";
+@import "global";
+@import "typography";
