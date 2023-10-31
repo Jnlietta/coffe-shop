@@ -4,7 +4,7 @@
   height: 1007px;
   background-image: url('../images/background.png');
   background-size: 110%;
-  background-position: -100px 0px;
+  background-position: right top;
   margin: 0 auto;
   padding: 0;
   color: $color-light;
@@ -97,27 +97,29 @@
   left: 50%;
   transform: translateX(-50%);
 
-  top:342px;
+  top: 342px;
   
-  .page-title {
+  &__title {
     //border:1px solid white;
-    width:1350px;
-    position:relative;
+    width: 1350px;
+    position: relative;
+
     &::after {
-        content: "";
-        width: 277px;
-        height: 6px;
-        background-color: $color-main;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%,0%);
-        top:250px;
-      }
+      content: "";
+      width: 277px;
+      height: 6px;
+      background-color: $color-main;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%,0%);
+      top: 250px;
+    }
   }
+
   h1 {
-    margin:0;
-    color:$color-main;
+    margin: 0;
+    color: $color-main;
     font-size: 100px;
     letter-spacing: 20px;
     line-height: 100px;
@@ -125,6 +127,7 @@
     font-family: $font-bold;
     text-align: left;
   }
+
   h1:nth-of-type(2){
     text-align: right;
   }
