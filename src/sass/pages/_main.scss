@@ -3,10 +3,10 @@
   max-width: 1920px;
   height: 1007px;
   background-image: url('../images/background.png');
-  background-size: cover;
-  background-position: center;
+  background-size: 110%;
+  background-position: -100px 0px;
   margin: 0 auto;
-  text-align: center;
+  padding: 0;
   color: $color-light;
   position: relative;
 
@@ -38,6 +38,7 @@
     font-family: $font-black;
     text-align: left;
   }
+
   &__logo {
     p:nth-of-type(1) {
       margin-top: 43.3px;
@@ -45,6 +46,7 @@
       font-size: 36px;
       letter-spacing: 11px;
     }
+
     p:nth-of-type(2) {
       margin: 0;
       font-size: 16px;
@@ -54,43 +56,40 @@
   }
 
   &__nav {
-    padding:0;
-    width:299px;
+    padding: 0;
+    width: 299px;
     font-size: 15px;
     margin-top: 68px;
 
-        ul {
-            padding: 0;
-            margin: 0 auto;
-            list-style-type: none;
-            display:flex;
-            justify-content: space-between;
+    ul {
+      padding: 0;
+      margin: 0 auto;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
             
-        }
-
-        li {
-            display: inline-block;
-        }
-
-        .nav__link{
-            opacity: 0.502;
-            font-size: 12px;
-            letter-spacing: 0px;
-            line-height: 17px;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: $color-light;
-            font-family: $font-semibold;
-
-            &:hover {
-                opacity: 1;
-            }
-        }
-
     }
+
+    li {
+      display: inline-block;
+    }
+
+    .nav__link{
+      opacity: 0.502;
+      font-size: 12px;
+      letter-spacing: 0px;
+      line-height: 17px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $color-light;
+      font-family: $font-semibold;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
 }
-
-
 
 .header {
   position: absolute;
@@ -98,6 +97,35 @@
   left: 50%;
   transform: translateX(-50%);
 
-  top: 50%;
-    
+  top:342px;
+  
+  .page-title {
+    //border:1px solid white;
+    width:1350px;
+    position:relative;
+    &::after {
+        content: "";
+        width: 277px;
+        height: 6px;
+        background-color: $color-main;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,0%);
+        top:250px;
+      }
+  }
+  h1 {
+    margin:0;
+    color:$color-main;
+    font-size: 100px;
+    letter-spacing: 20px;
+    line-height: 100px;
+    text-transform: uppercase;
+    font-family: $font-bold;
+    text-align: left;
+  }
+  h1:nth-of-type(2){
+    text-align: right;
+  }
 }
