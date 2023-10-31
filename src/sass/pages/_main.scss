@@ -131,4 +131,26 @@
   h1:nth-of-type(2){
     text-align: right;
   }
+
+  &__discover {
+    margin-top: 320px;
+    text-align: center;
+    font-size: 34px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    color: $color-light;
+    font-family: $font-regular;
+
+    p:nth-of-type(1){
+        margin:0;
+        margin-bottom:30px;
+    }
+
+    .icon {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 40px;
+        line-height: 40px;
+    }
+  }
 }
