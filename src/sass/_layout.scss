@@ -6,7 +6,7 @@ Mogłaby to być np. klasa dająca jakiś mały padding z góry i dołu elementu
 
 
 .container {
-  max-width: 700px;
+  max-width: 1164px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -18,14 +18,13 @@ Mogłaby to być np. klasa dająca jakiś mały padding z góry i dołu elementu
 
 /* Bootstrap */
 .row {
-  //border:2px solid black;
+  border:2px solid black;
   margin: 0 auto;
-  padding: 20px 0;
   flex-wrap: nowrap;  
 }
 
 .col-md-6 {
-  //border:1px solid red;
+  border:1px solid red;
   padding: 0px;
   object-fit: cover;
 }
