@@ -2,30 +2,48 @@
 Widzisz jakieś powtarzające się nagłówki czy style dla tekstu? 
 Warto przygotować odpowiednie klasy.*/
 
+.overlay {
+  //border: 1px solid black;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0;
+  color: $color-light;
+  position: relative;
 
-body {
-  h1 {
-    font-family: $font-black;
-    font-size: 50px;
+  &::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: $color-dark;
+    opacity: 0.6;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
   }
+}
 
-  h2 {
-    font-family: $font-semibold;
-    font-size: 50px;
-  }
+.gold__header{
+  //border: 1px solid red;
+  margin-bottom: 149.5px;
+  font-size: 75px;
+  letter-spacing: 15px;
+  line-height: 100px;
+  text-transform: uppercase;
+  color: $color-main;
+  font-family: $font-bold;
+  text-align: center;
+  position: relative;
 
-  h3 {
-    font-family: $font-italic;
-    font-size: 50px;
-  }
-
-  h4 {
-    font-family: $font-bold;
-    font-size: 50px;
-  }
-
-  h5 {
-    font-family: $font-regular;
-    font-size: 50px;
+  &::after{
+    content: "";
+    width: 777px;
+    height: 6px;
+    background-color: $color-main;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    top: 132.5px;
   }
 }

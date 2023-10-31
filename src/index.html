@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <section class="main">
+  <section class="overlay overlay--main">
     <nav class="navbar container">
       <div class="navbar__brand">
         <a class="navbar__logo"><p>El Tigre</p><p>Venezuela coffee beans</p></a>
@@ -35,17 +35,22 @@
       </div>
       <div class="header__discover">
         <p>Discover</p>
-        <p class="icon icon-arrow"></div>
+        <p class="icon icon-arrow"></p>
       </div>
     </header>
   </section>
 
   <div id="pages">
     <section id="home">
-      <div class="home__wrapper container"></div>
+      <div class="home__wrapper container">
+        <h1 class="gold__header">Products</h1>
+        <div id="product-list"></div>
+      </div>
+      <div class="home__about container overlay overlay--about">
+        <h1 class="gold__header">About us</h1>
+      </div>
     </section>
     <section id="products">
-      <h1 class="products__header container">Products</h1>
       <div id="product-list" class="products__wrapper container"></div>
     </section>
     <section id="contact">
