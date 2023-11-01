@@ -1,5 +1,4 @@
 .product {
-  ////border: 2px solid blue;
   width: 1157px;
   height: 422px;
   margin: 0 auto;
@@ -30,7 +29,6 @@
   }
 
   &__description {
-    //border:1px solid blue;
     width: 325px;
     margin-left: 139px;
     font-size: 15px;
@@ -45,7 +43,6 @@
   }
 
   &__properties {
-    //border: 1px solid green;
     list-style-type: none;
     margin: 0;
     margin-top: 57px;
@@ -65,7 +62,6 @@
   }
 
   &__image {
-    ////border: 2px solid green;
     width: 553px;
     height: 422px;
     float: right;
@@ -80,9 +76,17 @@
 }
 
 .product:nth-of-type(2n) {
-  //background: pink;
 
-  .product__image{
+  .row{
+    flex-direction: row-reverse;
+  }
+
+  .product {
+    &__text {
+      padding-left: 81.5px;
+    }
+    &__image{
     float: left;
+    }
   }
 }
