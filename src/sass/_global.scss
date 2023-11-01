@@ -4,25 +4,3 @@ Warto ustalić wygląd całego body. Warto poszukać też uniwersalnych element�
 Może np. w kilku miejscach powtarza się podobny przycisk? 
 Może kilka list wygląda podobnie? 
 Odnajdź takie powtarzające się elementy i dodaj dla nich klasy. */
-
-//fonts
-@font-face {
-  font-family: 'Source Serif Pro Black';
-  src: url('../vendor/fonts/source-sans-pro.black.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Source Serif Pro Semibold';
-  src: url('../vendor/fonts/source-sans-pro.semibold.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Source Serif Pro Semibold Italic';
-  src: url('../vendor/fonts/source-sans-pro.semibold-italic.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Source Serif Pro Bold';
-  src: url('../vendor/fonts/source-sans-pro.bold.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Source Serif Pro Regular';
-  src: url('../vendor/fonts/source-sans-pro.regular.ttf') format('truetype');
-}

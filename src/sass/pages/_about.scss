@@ -21,7 +21,9 @@
   height: 440px;
   font-size: 40px;
   letter-spacing: 1px;
-  font-family: $font-italic;
+  font-weight: 600;
+  font-style: italic;
+  font-family: $font-main;
 
   p{
     padding-right: 150px;
@@ -40,5 +42,7 @@
   letter-spacing: 0px;
   line-height: 25px;
   color: $color-lightDark;
-  font-family: $font-semibold;
+  font-weight: 600;
+  font-family: $font-main;
+
 }

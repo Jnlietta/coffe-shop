@@ -17,7 +17,8 @@
 
   &__brand {
     text-transform: uppercase;
-    font-family: $font-black;
+    font-weight: 900;
+    font-family: $font-main;
     text-align: left;
   }
 
@@ -64,7 +65,9 @@
       text-transform: uppercase;
       text-decoration: none;
       color: $color-light;
-      font-family: $font-semibold;
+      font-weight: 600;
+      font-family: $font-main;
+
 
       &:hover {
         opacity: 1;
@@ -106,7 +109,8 @@
     letter-spacing: 20px;
     line-height: 100px;
     text-transform: uppercase;
-    font-family: $font-bold;
+    font-weight: 700;
+    font-family: $font-main;
     text-align: left;
   }
 
@@ -121,7 +125,9 @@
     letter-spacing: 7px;
     text-transform: uppercase;
     color: $color-light;
-    font-family: $font-regular;
+    font-weight: 400;
+    font-family: $font-main;
+
 
     p:nth-of-type(1){
       margin: 0;

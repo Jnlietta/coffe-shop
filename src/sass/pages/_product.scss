@@ -13,7 +13,9 @@
     line-height: 100px;
     text-transform: uppercase;
     color: $color-dark;
-    font-family: $font-bold;
+    font-weight: 700;
+    font-family: $font-main;
+
     position: relative;
 
     &::after {
@@ -35,7 +37,9 @@
     letter-spacing: 0px;
     line-height: 25px;
     color: $color-lightDark;
-    font-family: $font-regular;
+    font-weight: 400;
+    font-family: $font-main;
+
 
     p {
       margin: 0;
@@ -54,7 +58,9 @@
     line-height: 30px;
     text-transform: uppercase;
     color: $color-dark;
-    font-family: $font-bold;
+    font-weight: 700;
+    font-family: $font-main;
+
 
     span {
       color: $color-main;
