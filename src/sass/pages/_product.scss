@@ -76,7 +76,6 @@
 }
 
 .product:nth-of-type(2n) {
-
   .row{
     flex-direction: row-reverse;
   }
@@ -85,8 +84,9 @@
     &__text {
       padding-left: 81.5px;
     }
+
     &__image{
-    float: left;
+      float: left;
     }
   }
 }
