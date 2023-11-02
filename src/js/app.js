@@ -38,16 +38,15 @@ const app = {
   initPages: function() {
     const thisApp = this;
 
-    thisApp.pages = document.querySelector(select.containerOf.pages).children;   //znalezienie kontenera z id=pages który zawiera kody podstron
-    thisApp.navLinks = document.querySelectorAll(select.nav.links);   //znalezienie wszystkie linki podstron
+    thisApp.pages = document.querySelector(select.containerOf.pages).children;   
+    thisApp.navLinks = document.querySelectorAll(select.nav.links);   
 
-    const idFromHash = window.location.hash.replace('#/', '');    //z hasha z urlu strony uzyskujemy id podstrony, która ma zostać otwarta jako domyślna
+    const idFromHash = window.location.hash.replace('#/', '');    
     console.log(idFromHash);
 
-                                                  //sprawdzamy czy ktoras z podstron pasuje do tego id ktore uzuskalismy z adresu strony
-    let pageMatchingHash = thisApp.pages[0].id;   //jezeli nie -  zostanie otwarta pierwsza podstrona
+    let pageMatchingHash = thisApp.pages[0].id;  
 
-    for(let page of thisApp.pages){               //jezeli tak - zostanie otwarta ta podstrona ktora pasowala do id uzyskanego z adresu strony
+    for(let page of thisApp.pages){               
       if(page.id == idFromHash){
         pageMatchingHash = page.id;
         break;
@@ -55,31 +54,31 @@ const app = {
     }
     //console.log('pageMatchingHash',pageMatchingHash);
 
-    thisApp.activatePage(pageMatchingHash);     //nastepnie aktywujemy odpowiednia podstrone
+    thisApp.activatePage(pageMatchingHash);     
 
     for(let link of thisApp.navLinks){
-      link.addEventListener('click', function(event){     //nadanie eventListenerów do wszystkich linków ktore odsylaja do podstron
+      link.addEventListener('click', function(event){     
         const clickedElement = this;
         event.preventDefault();
 
         /* get page id from href attribute */
-        const id = clickedElement.getAttribute('href').replace('#','');   //po kliknieciu w taki link uzyskujemy id z atrybutu href tego linka
+        const id = clickedElement.getAttribute('href').replace('#','');   
 
-        /* run thisApp.activatePage with that id */                 //aktywujemy odpowiednia podstrone
+        /* run thisApp.activatePage with that id */                 
         thisApp.activatePage(id);
 
         /* change URL hash */
-        window.location.hash = '#/' + id;         //przy aktywowaniu strony zmieniamy url hash
+        window.location.hash = '#/' + id;         
       });
     }
   },
 
-  activatePage: function(pageId) {                                    //powinna ona nadać odpowiedniemu wrapperowi klase active
+  activatePage: function(pageId) {                                    
     const thisApp = this;
 
     /* add class 'active' to matching pages, remove from non-matching */
     for(let page of thisApp.pages){
-      page.classList.toggle(classNames.pages.active, page.id == pageId);  //po przecinku zamiast warunku if
+      page.classList.toggle(classNames.pages.active, page.id == pageId);  
     }
 
     /* add class 'active' to matching links, remove from non-matching */
