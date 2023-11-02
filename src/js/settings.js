@@ -7,7 +7,7 @@ export const select = {
     pages: '#pages',
   },
   nav: {
-    links: '.nav__link, .navbar__logo',
+    links: '.nav__link',
   },
 };
 
