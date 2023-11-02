@@ -4,3 +4,13 @@ Warto ustalić wygląd całego body. Warto poszukać też uniwersalnych element�
 Może np. w kilku miejscach powtarza się podobny przycisk? 
 Może kilka list wygląda podobnie? 
 Odnajdź takie powtarzające się elementy i dodaj dla nich klasy. */
+
+#pages {
+  > * {
+    display: none;
+  }
+  
+  > .active {
+    display: block;
+  }
+}

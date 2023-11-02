@@ -68,9 +68,13 @@
       font-weight: 600;
       font-family: $font-main;
 
-
       &:hover {
         opacity: 1;
+      }
+
+      &.active {
+        opacity: 1;
+        background: lighten($color-dark, 75%);
       }
     }
   }
