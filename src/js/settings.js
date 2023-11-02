@@ -3,15 +3,28 @@ export const select = {
     storeProduct: '#template-store-product',
   },
   containerOf: {
-    store: '#product-list',
-  }
+    store: '.product-list',
+    pages: '#pages',
+  },
+  nav: {
+    links: '.nav__link, .navbar__logo',
+  },
+};
+
+export const classNames = {
+  nav: {
+    active: 'active',
+  },
+  pages: {
+    active: 'active',
+  },
 };
 
 export const settings = {    
   db: {
     url: '//' + window.location.hostname + (window.location.hostname=='localhost' ? ':3131' : ''),
     products: 'products',      
-  }
+  },
 };
 
 export const templates = {
