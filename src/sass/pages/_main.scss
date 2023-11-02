@@ -1,7 +1,7 @@
 .overlay--main {
   height: 1007px;
   background-image: url('../images/background.webp');
-  background-size: 110%;
+  background-size: cover;
   background-position: right top;
 }
 
@@ -133,7 +133,6 @@
     color: $color-light;
     font-weight: 400;
     font-family: $font-main;
-
 
     p:nth-of-type(1){
       margin: 0;

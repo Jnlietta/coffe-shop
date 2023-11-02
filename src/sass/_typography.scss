@@ -30,9 +30,9 @@ Warto przygotować odpowiednie klasy.*/
 
 .contact__wrapper {
   width: 530px;
-  margin:0 auto;
+  margin: 0 auto;
   margin-bottom: 100px;
-  padding:0;
+  padding: 0;
   display: flex;
   flex-flow: column;
   align-items: left;
@@ -44,25 +44,25 @@ Warto przygotować odpowiednie klasy.*/
   letter-spacing: 6px;
 
   h4 {
-    width:100%;
+    width: 100%;
     margin: 38px auto;
     text-align: center;
     text-transform: uppercase;   
   }
 
   input, textarea {
-    height:76px;
+    height: 76px;
     border: 2px solid $color-dark;
   }
 
   textarea {
-    height:154px;
+    height: 154px;
   }
 
   button {
     margin-top: 48px;
     width: 246px;
-    height:83px;
+    height: 83px;
     border: none;
     background-color: $color-main;
     text-transform: uppercase;
