@@ -1,7 +1,7 @@
-@media (max-width: 768px) {
+@media (max-width: 1439px){
   /*layout*/
   .container{
-    max-width: 767px;
+    max-width: 970px;
   }
   
   // .row {
@@ -15,7 +15,7 @@
   }
 
   .navbar {
-    width: 750px;
+    max-width: 900px;
     height: 50px;
     padding: 0 10px;
     gap: 0;
@@ -43,13 +43,12 @@
   }
 
   .header {
-    top: 5%;
-    scale: 0.5;
-    left: 9%;
+     top: 15%;
+     scale: 0.5;
+     left: 19%;
 
     &__discover {
-      margin-top: 300px;
-      left: 10%;
+      margin-top: 220px;
     }
   }
 
@@ -124,6 +123,7 @@
 
   /*about*/
   .overlay--about {
+    background-size: cover;
     height: 450px;
 
   }
@@ -150,3 +150,156 @@
   }
 
 }
+
+// @media (max-width: 767px){
+//   /*layout*/
+//   .container{
+//     max-width: 767px;
+//   }
+  
+//   // .row {
+//   //   flex-wrap: wrap;
+//   // }
+    
+//   /*main*/
+//   .overlay--main {
+//     background-size: cover;
+//     height: 504px;
+//   }
+
+//   .navbar {
+//     width: 750px;
+//     height: 50px;
+//     padding: 0 10px;
+//     gap: 0;
+//     justify-content: space-between;
+  
+//     &__logo {
+//       height: 50px;
+//       text-align: left;
+            
+//       p:nth-of-type(1){
+//         margin-top: 10px;
+//         margin-bottom: 7px;
+//         font-size: 20px;
+//       }
+
+//       p:nth-of-type(2) {
+//         font-size: 10px;
+//       }
+//     }
+
+//     &__nav {
+//       width: 200px;
+//       margin-top: 20px;
+//     }
+//   }
+
+//   .header {
+//     top: 5%;
+//     scale: 0.5;
+//     left: 9%;
+
+//     &__discover {
+//       margin-top: 300px;
+//       left: 10%;
+//     }
+//   }
+
+//   /*typography*/
+//   .gold__header {
+//     scale: 0.5;
+//     margin-top: 0;
+//     margin-bottom: 50px;
+//   }
+
+//   .contact__wrapper {
+//     width: 400px;
+//     margin-bottom: 50px;
+//     font-size: 20px;
+
+//     h4 {
+//       margin: 15px auto;
+//     }
+
+//     input, textarea {
+//       height: 40px;
+//     }
+
+//     textarea {
+//       height: 150px;
+//     }
+
+//     button {
+//       margin-top: 30px;
+//       width: 150px;
+//       height: 45px;
+//     }
+//   }
+
+//   /*product*/
+//   .product {
+//     width: 720px;
+//     height: 263px;
+//     padding-bottom: 42px;
+    
+//     &__title {
+//       margin-top: 20px;
+//       font-size: 24px;
+//       line-height: 50px;
+
+//       &::after {
+//         width: 55px;
+//         height: 2.5px;
+//         top: 55px;
+//       }
+//     }
+
+//     &__description {
+//       width: 285px;
+//       margin-left: 70px;
+//       line-height: 20px;
+//     }
+
+//     &__image {
+//       width: 344px;
+//       height: 263px;
+//     }
+//   }
+
+//   .product:nth-of-type(2n) {
+//     .product {
+//       &__text {
+//         padding-left: 10px;
+//       }
+//     }
+//   }
+
+//   /*about*/
+//   .overlay--about {
+//     height: 450px;
+
+//   }
+
+//   .home {
+//     &__about {
+//       padding: 0;
+//     }
+//   }
+
+//   .about-text {
+//     top: 30%;
+//     width: 485px;
+//     height: 220px;
+//     font-size: 22px;
+
+//     p {
+//       padding-right: 50px;
+//     }
+//   }
+
+//   .footer {
+//     padding: 0;
+//   }
+
+// }
