@@ -8,15 +8,11 @@
 .overlay__absolute {
   position: absolute;
   z-index: 1;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
-.navbar {
-  // position: absolute;
-  // z-index: 1;
-  // left: 50%;
-  // transform: translateX(-50%);
 
+.navbar {
   display: flex;
   gap: 599px;
   width: 100%;
@@ -89,14 +85,8 @@
 }
 
 .header {
-  // position: absolute;
-  // z-index: 1;
-  // left: 50%;
-  // transform: translateX(-50%);
-
-  // top: 342px;
-  width:1350px;
-  margin:0 auto;
+  width: 1350px;
+  margin: 0 auto;
   margin-top: 224px;
   justify-content: center;
   text-align: center;

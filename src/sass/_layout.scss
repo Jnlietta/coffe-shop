@@ -22,7 +22,13 @@ Mogłaby to być np. klasa dająca jakiś mały padding z góry i dołu elementu
   flex-wrap: nowrap;  
 }
 
-.col-6 {
+.col-sm-6 {
+  //border: 1px solid red;
+  padding: 0px;
+  object-fit: cover;
+}
+
+.col-xs-12 {
   //border: 1px solid red;
   padding: 0px;
   object-fit: cover;
