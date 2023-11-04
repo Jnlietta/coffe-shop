@@ -239,10 +239,10 @@
   }
 
   .navbar {
-    max-width: 340px;
+    max-width: 300px;
     height: 20px;
     padding: 0 10px;
-    gap: 0;
+    gap: 40px;
     justify-content: space-between;
   
     &__logo {
@@ -273,11 +273,11 @@
   }
 
   .header {
-    width: 350px;
+    width: 310px;
     margin-top: 90px;
 
     &__title {
-      width: 350px;
+      width: 310px;
         
       &::after {
         width: 100px;
@@ -346,12 +346,12 @@
 
   /*product*/
   .product {
-    width: 350px;
+    max-width: 280px;
     height: auto;
     padding-bottom: 30px;
 
     &__text {
-      padding: 0 20px;
+      padding: 0 10px;
       padding-bottom: 15px;
     }
 
@@ -369,7 +369,7 @@
     }
 
     &__description {
-      width: 250px;
+      width: auto;
       margin-left: 35px;
       line-height: 20px;
       font-size: 12px;
@@ -383,7 +383,7 @@
     }
 
     &__image {
-      width: 320px;
+      width: 280px;
       height: 200px;
       float: none;
     }
@@ -415,13 +415,13 @@
   }
 
   .about-text {
-    top: 30%;
-    width: 350px;
+    top: 25%;
+    width: 300px;
     height: 220px;
     font-size: 15px;
 
     p {
-      padding-right: 50px;
+      padding-right: 0px;
     }
   }
 
