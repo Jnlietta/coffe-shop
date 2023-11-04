@@ -224,11 +224,11 @@
 }
 
 @media (max-width:767px){
-  /*layout*/
+  /* layout */
   .container{
     max-width: auto;
   }
-  /* Bootstrap */
+  /* layout - Bootstrap */
   .row {
     flex-direction: column;  
   }
@@ -310,6 +310,7 @@
       }
     }
   }
+
   /*typography*/
   .gold__header {
     scale: 0.3;
@@ -342,7 +343,6 @@
       height: 30px;
     }  
   }
-
 
   /*product*/
   .product {
@@ -434,55 +434,3 @@
     }
   }
 }
-
-//   /*about*/
-//   .overlay--about {
-//     background-size: cover;
-//     height: 450px;
-
-//   }
-
-//   .home {
-//     &__about {
-//       padding: 0;
-//     }
-//   }
-
-//   .about-text {
-//     top: 30%;
-//     width: 485px;
-//     height: 220px;
-//     font-size: 22px;
-
-//     p {
-//       padding-right: 50px;
-//     }
-//   }
-
-//   .footer {
-//     padding: 0;
-//   }
-
-// @media (min-width: 768px) and (max-width:1023px){
-//   /*layout*/
-//   .container{
-//     max-width: 750px;
-//   }
-  
-//   /*main*/
-//   /*main*/
-//   .overlay--main {
-//     background-size: cover;
-//     height: 450px;
-//   }
-
-//   .navbar {
-//     width: 750px;
-//   }
-  
-//   .header {
-//     margin: 0auto;
-//     top: 40px;
-//     left: 0px;
-//     scale: 0.4;
-//   }
