@@ -1,5 +1,6 @@
 import { classNames, select, settings } from './settings.js';
 import Product from './components/Product.js';
+import Carousel from './components/Carousel.js';
 
 const app = {
   init: function() {
@@ -8,6 +9,7 @@ const app = {
     
     thisApp.initPages();
     thisApp.initData();
+    thisApp.initCarousel();
   },
 
   initData: function() {
@@ -88,6 +90,15 @@ const app = {
         link.getAttribute('href') == '#' + pageId
       );
     }
+  },
+
+  initCarousel: function() {
+    const thisApp = this;
+
+    thisApp.carouselsWrapper = document.querySelector('.main-carousel');
+    console.log('app:',thisApp.carouselsWrapper);
+
+    thisApp.Carousel = new Carousel(thisApp.carouselsWrapper);
   },
 };
 

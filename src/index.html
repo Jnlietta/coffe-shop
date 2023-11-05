@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="vendor/flickity.min.css" media="screen">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -54,11 +56,57 @@
       <div class="home__about overlay overlay--about">
         <h1 class="gold__header">About us</h1>
         <div class="about-text">
-          <p>Who are we? Just a bunch of friends with<br>a love for a good coffee and desire to create something new, something original.</p>
-          <p>Our coffees reflect us – young, wild and free. We are on the journey of new tastes...</p>
-          <p>Join us!</p>
+
+          <div class="main-carousel">
+            <div class="carousel-cell">
+              <div class="cell__item">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="./images/carousel-1.webp" alt="">
+                  </div>
+                  <div class="col-8 opinion">
+                      <h4>Amazing service!</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a nunc vitae nulla placerat convallis at viverra ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                      <p>~Loren Anderson</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-cell">
+              <div class="cell__item">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="./images/carousel-2.webp" alt="">
+                  </div>
+                  <div class="col-8 opinion">
+                      <h4>Amazing service!</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a nunc vitae nulla placerat convallis at viverra ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                      <p>~Loren Anderson</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-cell">
+              <div class="cell__item">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="./images/carousel-3.webp" alt="">
+                  </div>
+                  <div class="col-8 opinion">
+                      <h4>Amazing service!</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a nunc vitae nulla placerat convallis at viverra ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                      <p>~Loren Anderson</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
+
       <footer class="footer">
         <p>© 2021 EL TIGRE inc.</p>
       </footer>
@@ -112,6 +160,8 @@
   </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="vendor/flickity.pkgd.min.js"></script>
   <script src="js/app.js" type="module"></script>
 
 </body>
