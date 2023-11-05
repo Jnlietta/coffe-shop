@@ -1,20 +1,5 @@
-@media (min-width: 1204px) and (max-width: 1399px){
-  /*main*/
-  .header {
-    width: 1080px;
-            
-    &__title {
-      width: 1080px;
-    
-      &::after {
-        // width: 277px;
-        // height: 6px;
-      }
-    }
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1204px){
+/*Main sextion*/
+@media (min-width: 1024px) and (max-width: 1399px){
   /*main*/
   .overlay--main {
     height: 650px;
@@ -51,19 +36,20 @@
   }
 }
 
+/*Main section*/
 @media (min-width: 768px) and (max-width: 1024px) {
-  /*main*/  /*main*/
+  /*main*/
   .overlay--main {
     height: 450px;
   }
 
   .navbar {
-    max-width: 760px;
-    gap: 250px;
+    max-width: 95vw;
+    gap: 45vw;
     
     &__logo {
       height: 50px;
-      text-align: left;
+      //text-align: left;
                   
       p:nth-of-type(1){
         margin-top: 10px;
@@ -239,7 +225,7 @@
   }
 
   .navbar {
-    max-width: 300px;
+    max-width: 95vw;
     height: 20px;
     padding: 0 10px;
     gap: 40px;
@@ -280,16 +266,16 @@
       width: 310px;
         
       &::after {
-        width: 100px;
-        height: 2px;
-        top: 55px;
+        width: 150px;
+        height: 3px;
+        top: 60px;
       }
     }
     
     h1 {
-      font-size: 20px;
-      line-height: 20px;
-      letter-spacing: 8px;
+      font-size: 25px;
+      line-height: 25px;
+      letter-spacing: 6px;
     }
 
     &__discover {
@@ -312,12 +298,24 @@
   }
 
   /*typography*/
-  .gold__header {
-    scale: 0.3;
-    margin-top: 0;
+  // .gold__header {
+  //   scale: 0.3;
+  //   margin-top: 0;
+  //   margin-bottom: 50px;
+  //   white-space: nowrap;
+  //   line-height: 50px;
+  // }
+  .gold__header{
     margin-bottom: 50px;
-    white-space: nowrap;
+    font-size: 22.5px;
+    letter-spacing: 4.5px;
     line-height: 50px;
+  
+    &::after{
+      width: 233px;
+      height: 2.5px;
+      top: 45px;
+    }
   }
 
   .contact__wrapper {
@@ -351,6 +349,7 @@
     padding-bottom: 30px;
 
     &__text {
+      width: 250px;
       padding: 0 10px;
       padding-bottom: 15px;
     }
