@@ -11,38 +11,51 @@
   }
 }
 
+.col-4{
+  object-fit: cover;
+  padding: 0;
+}
+
+.col-8{
+  object-fit: cover;
+  padding: 0;
+}
+
 .about-text {
   position: absolute;
   z-index: 1;
   left: 50%;
   transform: translateX(-50%);
 
-  width: 971px;
+  padding: 0;
+  max-width: 1440px;
+  width: 90vw;
   height: 440px;
   font-size: 40px;
   letter-spacing: 1px;
-  font-weight: 600;
+  font-weight: 100;
   font-style: italic;
   font-family: $font-main;
 
-  p{
-    padding-right: 150px;
+  img {
+    height: 350px;
   }
 
-  p:nth-of-type(3){
-    text-align: right;
-    padding: 0;
+  .opinion {
+    h4{
+      font-style: normal;
+      font-weight: 400;
+      font-size: larger;
+      margin-top: 0;
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+      max-width: fit-content;
+    }
   }
-}
-
-.footer {
-  text-align: center;
-  padding: 15px 0;
-  font-size: 15px;
-  letter-spacing: 0px;
-  line-height: 25px;
-  color: $color-lightDark;
-  font-weight: 600;
-  font-family: $font-main;
-
 }
