@@ -70,6 +70,28 @@
     width: 553px;
     height: 422px;
     float: right;
+    font-weight: 700;
+    font-family: $font-main;
+    color: $color-light;
+
+
+    position: relative;
+    display: flex;
+
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 0%;
+      left: 100%;
+      transform: translate(-100%,0%);
+
+      border-top: 60px solid $color-main;
+      border-right: 60px solid $color-main;
+      border-bottom: 60px solid transparent;
+      border-left: 60px solid transparent;
+    }
   }
     
   img {
@@ -78,6 +100,37 @@
     object-fit: cover;
     box-shadow: 0px 0px 15px $color-dark;       //box-shadow: horizontal-offset vertical-offset blur spread color;    
   } 
+
+  &__prices {
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 100%;
+    transform: translate(-100%,0%);
+
+    h3 {
+      margin: 10px;
+
+      position: relative;
+      right: 30px;
+
+      &::after{
+        content: "";
+        background-color: $color-light;
+        width: 40px;
+        height: 1.5px;
+        position: absolute;
+        top: 50%;
+        left: 42%;
+        transform: translate(-50%,-50%);
+      }
+    }
+
+    h2{
+      margin-top: 0;
+      padding-right: 10px;
+    }
+  }
 }
 
 .product:nth-of-type(2n) {
@@ -92,6 +145,43 @@
 
     &__image{
       float: left;
+
+      &::after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        transform: translate(0%,-100%);
+  
+        border-top: 60px solid transparent;
+        border-right: 60px solid transparent;
+        border-bottom: 60px solid $color-main;
+        border-left: 60px solid $color-main;
+      }
+    }
+  }
+
+  .product__prices {
+    position: absolute;
+    z-index: 1;
+    top: 105%;
+    left: 0%;
+    transform: translate(0%,-100%);
+    
+    h3 {
+      margin: 10px;
+      right: 0px;
+
+      &::after{
+        left: 23%;
+      }
+    }
+
+    h2{
+      margin-top: 0;
+      padding-left: 40px;        
     }
   }
 }

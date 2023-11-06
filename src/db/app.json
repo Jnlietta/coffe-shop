@@ -6,7 +6,9 @@
             "description":"Mysterious and treacherous... The best choice for the start of your journey! It will provide you a rich delicious flavor.",
             "image":"<img src=\"images/coffee-1.webp\" alt=\"''\">",
             "roasting":"5/10",
-            "intensity":"6/10"
+            "intensity":"6/10",
+            "priceOld":"36$",
+            "priceNew":"25$"
         },
         {
             "id":"02.",
@@ -14,7 +16,9 @@
             "description":"Really dark coffee, only for the real gourmets. It has bitter flavor of grapefruits and is mixed with a little bit of peanuts with caramel.",
             "image":"<img src=\"images/coffee-2.webp\" alt=\"''\">",
             "roasting":"8/10",
-            "intensity":"9/10"
+            "intensity":"9/10",
+            "priceOld":"36$",
+            "priceNew":"25$"
         },
         {
             "id":"03.",
@@ -22,7 +26,9 @@
             "description":"Sweet and intense with a big amount of different flavors. Caramel,  grapes, strwaberry, you name it! It’s great choice for warm summer days.",
             "image":"<img src=\"images/coffee-3.webp\" alt=\"''\">",
             "roasting":"3/10",
-            "intensity":"7/10"
+            "intensity":"7/10",
+            "priceOld":"36$",
+            "priceNew":"25$"
         }
     ]
 } 
