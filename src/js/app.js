@@ -96,7 +96,7 @@ const app = {
   initCarousel: function() {
     const thisApp = this;
 
-    thisApp.carouselsWrapper = document.querySelector('.main-carousel');
+    thisApp.carouselsWrapper = document.querySelector(select.containerOf.carousel);
     //console.log('app:',thisApp.carouselsWrapper);
 
     thisApp.Carousel = new Carousel(thisApp.carouselsWrapper);
@@ -105,7 +105,7 @@ const app = {
   randomTitle: function() {
     const thisApp = this;
 
-    thisApp.titleWrapper = document.querySelector('.header__title');
+    thisApp.titleWrapper = document.querySelector(select.containerOf.title);
 
     let randomNumber = Math.floor(Math.random() * 3 + 1);
 

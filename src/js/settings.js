@@ -5,6 +5,8 @@ export const select = {
   containerOf: {
     store: '.product-list',
     pages: '#pages',
+    carousel: '.main-carousel',
+    title: '.header__title',
   },
   nav: {
     links: '.nav__link',
