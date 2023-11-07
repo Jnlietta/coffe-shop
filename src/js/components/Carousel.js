@@ -11,7 +11,7 @@ class Carousel {
     const thisCarousel = this;
 
     thisCarousel.element = elem; 
-    console.log('carousel:',elem);    
+    //console.log('carousel:',elem);    
   }
   
   initPlugin() {

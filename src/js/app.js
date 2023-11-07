@@ -7,6 +7,7 @@ const app = {
     const thisApp = this;
     //console.log(this);
     
+    thisApp.randomTitle();
     thisApp.initPages();
     thisApp.initData();
     thisApp.initCarousel();
@@ -96,10 +97,28 @@ const app = {
     const thisApp = this;
 
     thisApp.carouselsWrapper = document.querySelector('.main-carousel');
-    console.log('app:',thisApp.carouselsWrapper);
+    //console.log('app:',thisApp.carouselsWrapper);
 
     thisApp.Carousel = new Carousel(thisApp.carouselsWrapper);
   },
+
+  randomTitle: function() {
+    const thisApp = this;
+
+    thisApp.titleWrapper = document.querySelector('.header__title');
+
+    let randomNumber = Math.floor(Math.random() * 3 + 1);
+
+    if (randomNumber == 1){
+      thisApp.headerHTML = '<h1>HOME OF</h1><h1>ORIGINAL TASTES</h1>';
+    } else if (randomNumber == 2){
+      thisApp.headerHTML = '<h1>REAL VENEZUELA,</h1><h1>REAL COFFE</h1>';
+    } else if (randomNumber == 3){
+      thisApp.headerHTML = '<h1>TASTE REAL</h1><h1>VENEZUELA</h1>';
+    }
+
+    thisApp.titleWrapper.innerHTML = thisApp.headerHTML;
+  }
 };
 
 app.init();
