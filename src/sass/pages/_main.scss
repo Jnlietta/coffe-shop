@@ -45,7 +45,6 @@
   &__nav {
     padding: 0;
     width: 299px;
-    font-size: 15px;
     margin-top: 68px;
 
     ul {
@@ -63,7 +62,6 @@
 
     .nav__link{
       opacity: 0.502;
-      font-size: 12px;
       letter-spacing: 0px;
       line-height: 17px;
       text-transform: uppercase;
@@ -128,7 +126,6 @@
     font-size: 34px;
     letter-spacing: 7px;
     text-transform: uppercase;
-    color: $color-light;
     font-weight: 400;
 
     p:nth-of-type(1){
