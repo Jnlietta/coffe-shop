@@ -1,0 +1,44 @@
+.contact__wrapper {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: left;
+  
+    color: $color-dark;
+    font-family: $font-main;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 6px;
+  
+    h4 {
+      width: 100%;
+      margin: 38px auto;
+      text-align: center;
+      text-transform: uppercase;   
+    }
+  
+    input, textarea {
+      height: 76px;
+      border: 2px solid $color-dark;
+    }
+  
+    textarea {
+      height: 154px;
+    }
+  
+    button {
+      margin-top: 48px;
+      width: 246px;
+      height: 83px;
+      border: none;
+      background-color: $color-main;
+      text-transform: uppercase;
+      color: $color-light;
+      text-align: center;
+      align-self: center;
+    }
+  
+  }
