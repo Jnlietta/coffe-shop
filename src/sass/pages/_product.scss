@@ -5,6 +5,24 @@
   padding-bottom: 84px;
   position: relative;
 
+  .row {
+    //border: 2px solid black;
+    margin: 0 auto;
+    flex-wrap: nowrap;  
+  }
+  
+  .col-sm-6 {
+    //border: 1px solid red;
+    padding: 0px;
+    object-fit: cover;
+  }
+  
+  .col-xs-12 {
+    //border: 1px solid red;
+    padding: 0px;
+    object-fit: cover;
+  }
+
   &__title {
     margin: 0;
     margin-top: 40px;
@@ -14,7 +32,6 @@
     text-transform: uppercase;
     color: $color-dark;
     font-weight: 700;
-    font-family: $font-main;
 
     position: relative;
 
@@ -38,7 +55,6 @@
     line-height: 25px;
     color: $color-lightDark;
     font-weight: 400;
-    font-family: $font-main;
 
     p {
       margin: 0;
@@ -56,10 +72,7 @@
     letter-spacing: 1px;
     line-height: 30px;
     text-transform: uppercase;
-    color: $color-dark;
     font-weight: 700;
-    font-family: $font-main;
-
 
     span {
       color: $color-main;
@@ -71,7 +84,6 @@
     height: 422px;
     float: right;
     font-weight: 700;
-    font-family: $font-main;
     color: $color-light;
 
 

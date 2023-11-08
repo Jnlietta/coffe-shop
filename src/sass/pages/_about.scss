@@ -8,17 +8,23 @@
 .home {
   &__about{
     padding: 50px 0;
+
+    .row {
+      //border: 2px solid black;
+      margin: 0 auto;
+      flex-wrap: nowrap;  
+    }
+
+    .col-4{
+      object-fit: cover;
+      padding: 0;
+    }
+    
+    .col-8{
+      object-fit: cover;
+      padding: 0;
+    }
   }
-}
-
-.col-4{
-  object-fit: cover;
-  padding: 0;
-}
-
-.col-8{
-  object-fit: cover;
-  padding: 0;
 }
 
 .about-text {
@@ -35,7 +41,6 @@
   letter-spacing: 1px;
   font-weight: 100;
   font-style: italic;
-  font-family: $font-main;
 
   img {
     height: 350px;
