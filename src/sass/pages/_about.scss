@@ -27,7 +27,7 @@
   }
 }
 
-.about-text {
+.home .about__carousel {
   position: absolute;
   z-index: 1;
   left: 50%;
@@ -46,7 +46,7 @@
     height: 350px;
   }
 
-  .opinion {
+  .cell__opinion {
     h4{
       font-style: normal;
       font-weight: 400;
