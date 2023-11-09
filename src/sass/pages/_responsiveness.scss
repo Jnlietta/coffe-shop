@@ -1,12 +1,5 @@
 /*Product and contact*/
 @media (min-width: 768px) and (max-width: 1204px) {
-  /*typography*/
-  .header-gold {
-    scale: 0.5;
-    margin-top: 0;
-    margin-bottom: 50px;
-  }
-
   .contact__wrapper {
     width: 400px;
     margin-bottom: 50px;
@@ -70,19 +63,6 @@
   /* layout - Bootstrap */
   .row {
     flex-direction: column;  
-  }
-
-  .header-gold{
-    margin-bottom: 50px;
-    font-size: 22.5px;
-    letter-spacing: 4.5px;
-    line-height: 50px;
-  
-    &::after{
-      width: 233px;
-      height: 2.5px;
-      top: 45px;
-    }
   }
 
   .contact__wrapper {
