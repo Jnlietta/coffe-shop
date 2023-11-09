@@ -242,6 +242,10 @@
     height: auto;
     padding-bottom: 30px;
 
+    .row {
+      flex-direction: column;  
+    }
+    
     &__text {
       width: 250px;
       padding: 0 10px;

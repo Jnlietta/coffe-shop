@@ -42,3 +42,25 @@ Mogłaby to być np. klasa dająca jakiś mały padding z góry i dołu elementu
   color: $color-lightDark;
   font-weight: 600;
 }
+
+@media (min-width: 768px) and (max-width: 1204px) {
+  .footer {
+    padding: 0;
+  }
+}
+
+@media (max-width:767px){
+  /* layout */
+  .container{
+    max-width: auto;
+  }
+
+  .footer {
+    scale: 0.7;
+    padding: 0;
+
+    p{
+      margin : 0 auto;
+    }
+  }
+}
