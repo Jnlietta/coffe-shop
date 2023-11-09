@@ -40,3 +40,55 @@
   }
   
 }
+
+@media (min-width: 768px) and (max-width: 1204px) {
+  .contact__wrapper {
+    width: 400px;
+    margin-bottom: 50px;
+    font-size: 20px;
+
+    h4 {
+      margin: 15px auto;
+    }
+
+    input, textarea {
+      height: 40px;
+    }
+
+    textarea {
+      height: 150px;
+    }
+
+    button {
+      margin-top: 30px;
+      width: 150px;
+      height: 45px;
+    }
+  }
+}
+
+@media (max-width:767px){
+  .contact__wrapper {
+    width: 300px;
+    margin-bottom: 30px;
+    font-size: 15px;
+
+    h4 {
+      margin: 10px auto;
+    }
+
+    input, textarea {
+      height: 30px;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100px;
+      height: 30px;
+    }  
+  }
+}
