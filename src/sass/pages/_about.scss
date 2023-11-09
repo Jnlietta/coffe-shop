@@ -64,3 +64,66 @@
     }
   }
 }
+
+@media (min-width: 768px) and (max-width: 1204px) {
+  .overlay--about {
+    background-size: cover;
+    height: 450px;
+
+  }
+
+  .home {
+    &__about {
+      padding: 0;
+    }
+  }
+
+  .home .about__carousel {
+    top: 30%;
+    max-width: 768px;
+    width: 90vw;
+    height: 220px;
+    font-size: 22px;
+
+    img {
+      height: 220px;
+    }
+  }
+}
+
+@media (max-width:767px){
+  .overlay--about {
+    background-size: cover;
+    height: 300px;
+
+  }
+
+  .home {
+    &__about {
+      padding: 0;
+
+      .row {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+
+  .home .about__carousel {
+    top: 25%;
+    max-width: 768px;
+    width: 90vw;
+    height: 220px;
+    font-size: 9px;
+    text-align: center;
+ 
+    img {
+      height: 100px;
+      margin: 0 auto;
+    }
+
+    .cell__opinion {
+      margin-top: 10px;
+    }
+  }
+}
