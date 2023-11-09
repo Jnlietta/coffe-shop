@@ -1,2 +1,2 @@
 # coffee-shop
-https://coffee-shop.juliawglinka.repl.co/
+https://coffee-shop-1.juliawglinka.repl.co/
