@@ -112,6 +112,7 @@
   } 
 
   &__prices {
+    font-size:13.5px;
     position: absolute;
     z-index: 1;
     top: 0%;
@@ -127,11 +128,11 @@
       &::after{
         content: "";
         background-color: $color-light;
-        width: 40px;
-        height: 1.5px;
+        width: 30px;
+        height: 1px;
         position: absolute;
         top: 50%;
-        left: 42%;
+        left: 50%;
         transform: translate(-50%,-50%);
       }
     }
@@ -192,6 +193,104 @@
     h2{
       margin-top: 0;
       padding-left: 40px;        
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1204px) {
+  .product {
+    width: 720px;
+    height: 263px;
+    padding-bottom: 42px;
+    
+    &__title {
+      margin-top: 20px;
+      font-size: 24px;
+      line-height: 50px;
+
+      &::after {
+        width: 55px;
+        height: 2.5px;
+        top: 55px;
+      }
+    }
+
+    &__description {
+      width: 285px;
+      margin-left: 70px;
+      line-height: 20px;
+    }
+
+    &__image {
+      width: 344px;
+      height: 263px;
+    }
+  }
+
+  .product:nth-of-type(2n) {
+    .product {
+      &__text {
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width:767px){
+  .product {
+    max-width: 280px;
+    height: auto;
+    padding-bottom: 30px;
+
+    &__text {
+      width: 250px;
+      padding: 0 10px;
+      padding-bottom: 15px;
+    }
+
+    &__title {
+      margin-top: 0px;
+      font-size: 15px;
+      letter-spacing: 1px;
+      line-height: 20px;
+
+      &::after {
+        width: 30px;
+        height: 1.5px;
+        top: 27px;
+      }
+    }
+
+    &__description {
+      width: auto;
+      margin-left: 35px;
+      line-height: 20px;
+      font-size: 12px;
+    }
+
+    &__properties {
+      margin-top: 20px;
+      margin-left: 8px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    &__image {
+      width: 280px;
+      height: 200px;
+      float: none;
+    }
+  }
+
+  .product:nth-of-type(2n) {
+    .row{
+      flex-direction: column;
+    }
+
+    .product {
+      &__text {
+        padding-left: 20px;
+      }
     }
   }
 }
